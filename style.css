@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Vazirmatn",sans-serif;background:#080808;color:#fff;line-height:1.8}
+header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,.75);backdrop-filter:blur(15px);border-bottom:1px solid #222}
+.navbar{max-width:1100px;margin:auto;height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 25px}
+.logo{font-size:22px;font-weight:800;color:#00e5ff}
+.nav-links{display:flex;list-style:none;gap:28px}
+.nav-links a{color:#bbb;text-decoration:none;transition:.3s}
+.nav-links a:hover{color:#00e5ff}
+.hero{min-height:100vh;max-width:1100px;margin:auto;padding:130px 25px 80px;display:flex;align-items:center;justify-content:space-between;gap:50px}
+.hero-content{max-width:650px}.hello{color:#00e5ff;font-size:20px;margin-bottom:5px}
+.hero h1{font-size:clamp(50px,8vw,90px);line-height:1.1;letter-spacing:-3px}
+.hero h2{margin-top:15px;font-size:25px;color:#ddd}
+.hero p:not(.hello){margin-top:20px;color:#999;max-width:600px}
+.buttons{display:flex;gap:15px;margin-top:30px}.btn{padding:12px 25px;border-radius:10px;text-decoration:none;transition:.3s}
+.primary{background:#00e5ff;color:#000;font-weight:700}.primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,229,255,.25)}
+.secondary{border:1px solid #333;color:#fff}.secondary:hover{border-color:#00e5ff;color:#00e5ff}
+.profile-card{width:280px;height:330px;border:1px solid #292929;border-radius:25px;background:linear-gradient(145deg,#151515,#0b0b0b);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 25px 70px rgba(0,0,0,.5)}
+.avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#00e5ff,#0077ff);display:flex;align-items:center;justify-content:center;font-size:65px;font-weight:800;color:#fff;margin-bottom:25px}
+.profile-card h3{font-size:23px}.profile-card span{color:#777}
+.section{max-width:1100px;margin:auto;padding:100px 25px}
+.section-title{display:flex;align-items:center;gap:15px;margin-bottom:40px}.section-title span{color:#00e5ff;font-weight:700}.section-title h2{font-size:35px}
+.about-box{max-width:800px;color:#aaa;font-size:18px}.about-box p+p{margin-top:15px}
+.skills-grid,.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skill,.project{padding:30px;background:#101010;border:1px solid #222;border-radius:18px;transition:.3s}
+.skill:hover,.project:hover{transform:translateY(-7px);border-color:#00e5ff}
+.skill-icon{font-size:35px;margin-bottom:15px}.skill h3,.project h3{margin-bottom:8px}.skill p,.project p{color:#888}
+.project-number{color:#00e5ff;font-size:14px;margin-bottom:25px}.project a{display:inline-block;margin-top:20px;color:#00e5ff;text-decoration:none}
+.contact{text-align:center}.contact .section-title{justify-content:center}.contact p{color:#888}
+.socials{display:flex;justify-content:center;gap:15px;margin-top:25px;flex-wrap:wrap}.socials a{padding:10px 22px;border:1px solid #292929;border-radius:10px;color:#fff;text-decoration:none;transition:.3s}.socials a:hover{color:#00e5ff;border-color:#00e5ff}
+footer{text-align:center;padding:30px;border-top:1px solid #1d1d1d;color:#555}
+@media(max-width:750px){.navbar{justify-content:center}.logo{display:none}.nav-links{gap:12px;font-size:13px}.hero{flex-direction:column;text-align:center;padding-top:120px}.hero h1{font-size:55px}.hero h2{font-size:20px}.buttons{justify-content:center;flex-wrap:wrap}.profile-card{width:100%;max-width:300px}.skills-grid,.projects-grid{grid-template-columns:1fr}.section-title h2{font-size:28px}}
